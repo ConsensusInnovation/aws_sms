@@ -33,7 +33,6 @@ class AwsSms
 
   def set_config!
     Aws.config.update({
-      aws_default_region: aws_default_region,
       credentials: Aws::Credentials.new(aws_access_key_id, aws_secret_access_key)
     })
   end
